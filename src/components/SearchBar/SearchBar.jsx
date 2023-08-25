@@ -6,6 +6,7 @@ export const SearchBar = ({ level, topic, onChangeLevel, onChangeTopic }) => {
       <h2>Find quiz by topic</h2>
       <Wrapper>
         <Input
+          name="topicSearch"
           type="text"
           placeholder="Topic filter"
           value={topic}
@@ -14,6 +15,7 @@ export const SearchBar = ({ level, topic, onChangeLevel, onChangeTopic }) => {
           }}
         />
         <Select
+          name="levelSearch"
           value={level}
           onChange={e => {
             onChangeLevel(e.target.value);
